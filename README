@@ -1,0 +1,23 @@
+The President of the Moon - Jules VeRNN
+
+58,394 words.
+
+
+
+This uses the Keras neural net Python library. Training code minimally modified from:
+https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py
+
+
+Prerequisites: 
+Keras (https://github.com/fchollet/keras)
+-and some associated dependencies
+Theano (http://deeplearning.net/software/theano/install.html#install)
+Stanford NER (http://nlp.stanford.edu/software/CRF-NER.shtml, used http://nlp.stanford.edu/software/stanford-ner-2014-06-16.zip)
+Python NLTK (http://www.nltk.org/)
+
+The source text includes Verne's From the Earth to the Moon and In the Year 2889. 
+vernn.py trains an LSTM net on the text, generates a 300,000 character file, and then edits that file into a more novel-like format. 
+
+This process takes a long time to finish on a CPU, hence why this book is only on iteration 15/16.
+
+Running the script will use the included architecture/weights by default, and will re-produce a new novel with it. To use the existing text, one would need to comment out the "Produce text" section. 
