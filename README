@@ -18,6 +18,6 @@ Python NLTK (http://www.nltk.org/)
 The source text includes Verne's From the Earth to the Moon and In the Year 2889. 
 vernn.py trains an LSTM net on the text, generates a 300,000 character file, and then edits that file into a more novel-like format. 
 
-This process takes a long time to finish on a CPU, hence why this book is only on iteration 15/16.
+This process takes a long time to finish on a CPU, hence why this book is only on iteration 15 or 16, which is less than the recommended minimum of 20 and less than the (albeit optimistic) limit of 60 in the script.
 
 Running the script will use the included architecture/weights by default, and will re-produce a new novel with it. To use the existing text, one would need to comment out the "Produce text" section. 
