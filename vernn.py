@@ -68,6 +68,8 @@ if startnumber > 0:
 # build the model: 2 stacked LSTM
 else:
     # TEXT SETUP
+    path = 'verne_2889_moon'
+    text = open(path).read().lower()
     print('corpus length:', len(text))
 
     chars = set(text)
